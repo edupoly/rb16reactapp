@@ -47,7 +47,7 @@ class App extends React.Component{
     return (
       <div className='betterview'>
         <Todolist></Todolist>
-        <Carousal images={this.state.birdImages} cname="birds"></Carousal>
+        {/* <Carousal images={this.state.birdImages} cname="birds"></Carousal>
         <Carousal images={this.state.carImages} cname='cars'></Carousal>
         <Counter gender="male" start={10} step={5}></Counter>
         <Counter gender='female' start={20} step={10}></Counter>
@@ -86,7 +86,7 @@ class App extends React.Component{
               })
             }
           </tbody>
-        </table>
+        </table> */}
       </div>
     )
   }
