@@ -49,9 +49,9 @@ export class Todolist extends Component {
             <input type="text" onChange={(e)=>{this.setState({task:e.target.value})}}/>
             <button onClick={this.addTask}>Add Task</button>
             <br />
-            <input type="radio" name="filt" id="" checked={this.state.filterKey==='all'} onChange={()=>{this.updateFilterKey('all')}}/>:All
-            <input type="radio" name="filt" id="" checked={this.state.filterKey==='completed'} onChange={()=>{this.updateFilterKey('completed')}} />:Completed
-            <input type="radio" name="filt" id="" checked={this.state.filterKey==='notcompleted'} onChange={()=>{this.updateFilterKey('notcompleted')}} />:Not Completed
+            <input type="radio" name="filt" id="" checked={this.state.filterKey==='all'} onChange={()=>{this.updateFilterKey('all')}}/>:All &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="filt" id="" checked={this.state.filterKey==='completed'} onChange={()=>{this.updateFilterKey('completed')}} />:Completed &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="filt" id="" checked={this.state.filterKey==='notcompleted'} onChange={()=>{this.updateFilterKey('notcompleted')}} />:Not Completed&nbsp;&nbsp;&nbsp;&nbsp;
             {
                 this.state.todos.map((t,i)=>{
                     if(this.state.filterKey==='completed'){
@@ -65,7 +65,6 @@ export class Todolist extends Component {
                         ):''
                     }
                     return (<Todo t={t} i={i} deleteTodo={this.deleteTodo} undo={this.undo} done={this.done}></Todo>)
-                    
                 })
             }
         </div>
