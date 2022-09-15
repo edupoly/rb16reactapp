@@ -4,6 +4,7 @@ import React from 'react';
 import Counter from './Counter';
 import Carousal from './Carousal';
 import Todolist from './Todolist';
+import Counter2 from './Counter2';
 class App extends React.Component{
   constructor(){
     super();
@@ -46,10 +47,12 @@ class App extends React.Component{
   render(){
     return (
       <div className='betterview'>
-        <Todolist></Todolist>
+        <Counter2></Counter2>
+        <Counter gender="male" start={10} step={5}></Counter>
+        {/* <Todolist></Todolist> */}
         {/* <Carousal images={this.state.birdImages} cname="birds"></Carousal>
         <Carousal images={this.state.carImages} cname='cars'></Carousal>
-        <Counter gender="male" start={10} step={5}></Counter>
+        
         <Counter gender='female' start={20} step={10}></Counter>
         <hr />
         <label htmlFor='firstname'>Firstname</label>
