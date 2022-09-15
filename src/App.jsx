@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import Counter from './Counter';
 import Carousal from './Carousal';
+import FunCounter from './FunCounter';
 class App extends React.Component{
   constructor(){
     super();
@@ -45,7 +46,19 @@ class App extends React.Component{
   render(){
     return (
       <div className='betterview'>
-        <Carousal images={this.state.birdImages} cname="birds"></Carousal>
+          <FunCounter start={100} step={10}></FunCounter>
+          <FunCounter start={200} step={20}></FunCounter>
+
+
+
+
+
+
+
+
+
+
+        {/* <Carousal images={this.state.birdImages} cname="birds"></Carousal>
         <Carousal images={this.state.carImages} cname='cars'></Carousal>
         <Counter gender="male" start={10} step={5}></Counter>
         <Counter gender='female' start={20} step={10}></Counter>
@@ -84,7 +97,7 @@ class App extends React.Component{
               })
             }
           </tbody>
-        </table>
+        </table> */}
       </div>
     )
   }
